@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const clean = require('gulp-clean');
 const flatten = require('gulp-flatten');
 const replace = require('gulp-replace');
@@ -14,7 +14,7 @@ gulp.task('build', () =>
     .pipe(replace("from '../lib/globals';", "from './globals';"))
     .pipe(replace("from '../lib/wrap';", "from './wrap';"))
     .pipe(babel())
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('./'))
 );
 
