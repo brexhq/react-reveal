@@ -50,6 +50,7 @@ gulp.task('clean', function () {
     './Wobble.js',
     './Flip.js',
     './Reveal.js',
+    './ScrollRotate.js',
     './Rotate.js',
     './LightSpeed.js',
     './Spin.js',
