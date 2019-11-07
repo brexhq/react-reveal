@@ -24,4 +24,4 @@ export { default as Reveal } from './Reveal';
 export { default as Rotate } from './Rotate';
 export { default as LightSpeed } from './LightSpeed';
 export { default as Zoom } from './Zoom';
-export { default as ScrollRotate } from './ScrollRotate';
+export { ScrollRotate } from './ScrollRotate';
