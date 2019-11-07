@@ -7,7 +7,7 @@ const wrapperStyles = {
     position: 'relative'
 }
 
-export class ScrollRotate extends React.Component {
+class ScrollRotate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -66,7 +66,7 @@ export class ScrollRotate extends React.Component {
     getAnimationStyles() {
         const {scrollOnce} = this.state;
         const {animationDuration} = this.props;
-        return  { 
+        return  {
             transform: `rotate(${this.getDeg()}deg)`,
             transition: !scrollOnce ? '' : `transform ${(animationDuration || animationDuration===0) ? animationDuration : '0.1'}s`,
         }
@@ -116,7 +116,7 @@ export class ScrollRotate extends React.Component {
         </div>
     }
 }
-  
+
 ScrollRotate.propTypes = {
     target: PropTypes.string,
     throttle: PropTypes.number,
@@ -136,3 +136,5 @@ ScrollRotate.defaultProps = {
     loops: 1,
     animationDuration :0.1
 }
+
+export default ScrollRotate;
