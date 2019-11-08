@@ -67,9 +67,10 @@ class ScrollRotate extends React.Component {
         const {scrollOnce} = this.state;
         const {animationDuration} = this.props;
         return  {
-            transform: `rotate(${this.getDeg()}deg)`,
-            transition: !scrollOnce ? '' : `transform ${(animationDuration || animationDuration===0) ? animationDuration : '0.1'}s`,
-            willChange: 'transform',
+          transform: 'scale(0.7)'
+            // transform: `rotate(${this.getDeg()}deg)`,
+            // transition: !scrollOnce ? '' : `transform ${(animationDuration || animationDuration===0) ? animationDuration : '0.1'}s`,
+            // willChange: 'transform',
         }
     }
 
