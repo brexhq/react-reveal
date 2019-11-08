@@ -23,13 +23,8 @@ const
 
 const rule = `
 	from {
-    transform: scale3d(3, 3, 3);
-  }
-
-  50% {
     transform: scale3d(2, 2, 2);
   }
-
   to {
     transform: scale3d(1, 1, 1);
 }
